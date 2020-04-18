@@ -3,6 +3,7 @@
 //
 #include<iostream>
 #include<vector>
+#define pb push_back
 using namespace std;
 int main(){
     int n;
@@ -13,7 +14,7 @@ int main(){
     {
         int b;
         cin>>b;
-        a.push_back(b);
+        a.pb(b);
 
     }
     for(int i=0;i<n;i++)
