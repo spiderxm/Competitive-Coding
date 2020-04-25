@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+
 #define ll long long
 #define sq(a) (a*a)
 #define mp make_pair
@@ -13,9 +14,10 @@
 #define endl "\n"
 #define fastIO ios::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 using namespace std;
+
 void test_case();
-ll power(ll x,ll y)
-{
+
+ll power(ll x, ll y) {
     ll res = 1;     // Initialize result
 
     x = x % mod; // Update x if it is more than or
@@ -23,32 +25,37 @@ ll power(ll x,ll y)
 
     if (x == 0) return 0; // In case x is divisible by p;
 
-    while (y > 0)
-    {
+    while (y > 0) {
         // If y is odd, multiply x with result
         if (y & 1)
-            res = (res*x) % mod;
+            res = (res * x) % mod;
 
         // y must be even now
-        y = y>>1; // y = y/2
-        x = (x*x) % mod;
+        y = y >> 1; // y = y/2
+        x = (x * x) % mod;
     }
     return res;
 }
-int main()
-{
+
+int main() {
     fastIO;
     //freopen("i/p.txt","r",stdin);
     //freopen("o/p.txt","w",stdout);
-    ll t; cin>>t;
-    while(t--) test_case();
+    ll t;
+    cin >> t;
+    while (t--) test_case();
     return 0;
 }
 
-void test_case()
-{
-    ll n,a,k,s=0;cin>>n>>a;vector<ll> v;
-    for(ll i=1;i<=n;i++){k = power(a,(2*i-1))%mod;v.pb(k);a=(a*k)%mod;}
-    for(auto x:v) s+=x;
-    cout<<(s%mod)<<endl;
+void test_case() {
+    ll n, a, k, s = 0;
+    cin >> n >> a;
+    vector<ll> v;
+    for (ll i = 1; i <= n; i++) {
+        k = power(a, (2 * i - 1)) % mod;
+        v.pb(k);
+        a = (a * k) % mod;
+    }
+    for (auto x:v) s += x;
+    cout << (s % mod) << endl;
 }
