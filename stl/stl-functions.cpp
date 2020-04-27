@@ -121,7 +121,14 @@ int main() {
         cout << t << " ";
     }
 
+    pair<int, char> l;
+    l.first = 18;
+    l.second = 'm';
+    cout << l.first << endl;
+    cout << l.second;
 
+    pair<int, string> l2 = make_pair(18, "mrigank");
+    cout << l2.first << " " << l2.second << endl;
     return 0;
 }
 
