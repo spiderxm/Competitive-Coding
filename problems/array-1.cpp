@@ -49,7 +49,7 @@ int main() {
         int a1, b1;
         cout << "Enter positions you want to query for sum of array elements between two positions : ";
         cin >> a1 >> b1;
-        cout << b[b1] - b[a1];
+        cout << b[b1-1] - b[a1-1];
         cout << endl;
     }
 
