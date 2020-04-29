@@ -1,7 +1,5 @@
 //
-// Created by Mrigank Anand on 28/04/20.
-//
-
+// Created by Mrigank Anand on 29/04/20.
 //shuru apni marzi se kiye the ab fhodne ka man kar raha hai
 #include<iostream>
 #include<vector>
@@ -35,19 +33,21 @@ int main() {
     ll t;
     cin >> t;
     while (t--) {
-        ll x;
-        ll n;
-        cin >> n;
-        ll k = 2;
-        while (true) {
-            ll sum = pow(2, k) - 1;
-            ll e = n / sum;
-            if (e * sum == n) {
-                cout << e << endl;
-                break;
+        ll a, b, q;
+        cin >> a >> b >> q;
+        while (q--) {
+
+            ll l, r;
+            cin >> l >> r;
+            ll count = 0;
+            for (ll i = l; i <= r; i++) {
+                if ((i % a) % b != (i % b) % a) {
+                    count++;
+                }
             }
-            k++;
+            cout << count << " ";
         }
+        cout << endl;
     }
     return 0;
 }
