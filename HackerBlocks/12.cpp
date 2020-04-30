@@ -5,7 +5,6 @@
 //shuru apni marzi se kiye the ab fhodne ka man kar raha hai
 #include<iostream>
 #include<vector>
-
 #define ll long long
 
 using namespace std;
