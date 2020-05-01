@@ -4,7 +4,7 @@ Euclid Algo
  Sieve of Eratosthenes
  Segmented Sieve
  Linear Diophantine Equation,
- Chinese Remainder Theorem
+Chinese Remainder Theorem
  Lucas theorem, Wilson theorem
  Totient Function
  FT theorem and Miller - Rabin Primality test.
