@@ -52,7 +52,22 @@ ll topdown(ll n, ll k, ll dp[]) {
     }
     return dp[n] = ans;
 }
-ll optimised()
+
+ll optimised(ll n, ll k) {
+    // O(n+k)
+    ll dp[100] = {0};
+    dp[0] = 1;
+    dp[1] = 1;
+    for (int i = 2; i <= k; ++i) {
+        dp[i] = 2 * dp[i - 1];
+    }
+    for (int l = k + 1; l <= n; l++) {
+        dp[l] = (2 * dp[l - 1]) - dp[l - k - 1];
+    }
+    return dp[n];
+    // highly optimised
+}
+
 int main() {
     // find number of ways to reach nth step if u can jump in k ways
     ll n, k;
@@ -63,5 +78,8 @@ int main() {
     cout << " - - - - - - - - - - ";
 
     cout << bottomup(n, k);
+    cout << " - - - - - - - - - -  + ";
+
+    cout << optimised(n, k);
     return 0;
 }
