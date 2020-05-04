@@ -22,8 +22,9 @@
 using namespace std;
 
 ll maxSum(ll a[], ll n) {
-    ll maxx = 0;
-    ll max = 0;
+    ll maxx = 0;  // will have max subarray sum
+    ll max = 0;   // will be used to store current sum
+    // space optimised solution
     for (int i = 0; i < n; i++) {
         max = max + a[i];
         if (max < 0)
