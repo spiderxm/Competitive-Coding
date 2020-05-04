@@ -36,6 +36,8 @@ ll fib(int n, ll dp[]) {
 }
 
 ll fibbo(ll n) {
+    // Space complexity = O(n)
+    // Bottom to top approach
     ll dp[100] = {0};
     dp[0] = 0;
     dp[1] = 1;
@@ -43,6 +45,24 @@ ll fibbo(ll n) {
         dp[i] = dp[i - 1] + dp[i - 2];
     }
     return dp[n];
+}
+
+ll fibbospace(ll n) {
+    // Space Complexity very less
+    // Time complexity O(n)
+    // Bottom up approach with time optimisation
+    if (n == 0 || n == 1) {
+        return n;
+    }
+    ll a = 0;
+    ll b = 1;
+    ll c;
+    for (int i = 2; i <= n; ++i) {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
 }
 
 int main() {
@@ -57,5 +77,7 @@ int main() {
 
     cout << fib(n, dp) << endl;
     cout << fibbo(n) << endl;
+    cout << fibbospace(n) << endl;
+
     return 0;
 }
