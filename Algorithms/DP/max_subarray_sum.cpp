@@ -20,7 +20,7 @@
 #define boost ios::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 #define w() ll t; cin >> t; while(t--)
 using namespace std;
-
+// Kadane's Algorithm
 ll maxSum(ll a[], ll n) {
     ll maxx = 0;  // will have max subarray sum
     ll max = 0;   // will be used to store current sum
@@ -32,12 +32,23 @@ ll maxSum(ll a[], ll n) {
         if (maxx < max)
             maxx = max;
     }
-    return maxx;
+    if (maxx != 0) {
+        return maxx;
+    } else {
+        // If all elements are negative
+        maxx = a[0];
+        for (int i = 1; i < n; ++i) {
+            if (a[i] > maxx) {
+                maxx = a[i];
+            }
+        }
+        return maxx;
+    }
 }
 
 int main() {
     // maximum subarray sum
-    ll a[] = {-2, -3, 4, -1, -2, 1, 5, -3};
+    ll a[] = {-3, -2};
     ll n = sizeof(a) / sizeof(a[0]);
     cout << maxSum(a, n);
     return 0;
