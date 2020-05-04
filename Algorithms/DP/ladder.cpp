@@ -75,11 +75,9 @@ int main() {
     ll dp[100] = {0};
     cout << topdown(n, k, dp);
 
-    cout << " - - - - - - - - - - ";
-
+    cout << endl;
     cout << bottomup(n, k);
-    cout << " - - - - - - - - - -  + ";
-
+    cout << endl;
     cout << optimised(n, k);
     return 0;
 }
