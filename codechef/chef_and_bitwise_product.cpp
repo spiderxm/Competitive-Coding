@@ -27,18 +27,17 @@ int main() {
     while (t--) {
         ll x, y, l, r;
         cin >> x >> y >> l >> r;
-
-        ll ans = 0;
-        ll c = l;
-        for (ll i = l; i < r; i++) {
-            ll u;
-            u = (x & i) * (i & y);
-            if (ans < u) {
-                ans = u;
-                c = i;
+        if (l < (x | y) && r > (x | y)) {
+            cout << (x | y) << endl;
+        } else if (r == 2 * max(x, y)) {
+            cout << 2 * max(x, y) << endl;
+        } else if (l < (x | y) && r < (x | y)) {
+            ll o = (x | y);
+            while (o > r) {
+                o = o >> 1;
             }
+            cout << o << endl;
         }
-        cout << c << endl;
     }
     return 0;
 }

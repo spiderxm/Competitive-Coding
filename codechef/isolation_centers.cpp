@@ -3,13 +3,7 @@
 //
 // Problem code : CORUS
 //shuru apni marzi se kiye the ab fhodne ka man kar raha hai
-#include<iostream>
-#include<vector>
-#include <algorithm>
-#include<queue>
-#include<math.h>
-#include<map>
-#include<set>
+#include<bits/stdc++.h>
 
 #define ll long long
 #define sq(a) (a)*(a)
@@ -21,36 +15,31 @@
 #define w() ll t; cin >> t; while(t--)
 using namespace std;
 
+#include<unordered_map>
+
 int main() {
     string u = "orona";
     ll t;
     cin >> t;
     while (t--) {
-        map<char, int> a;
         ll n, q;
         cin >> n >> q;
-        string s;
-        cin >> s;
-        ll c[q];
-        ll ans = 0;
-        for (int j = 0; j < n; j++) {
-            if (a.count(a[s[j]])) {
-                a[s[j]] = 1;
-            } else {
-                a[s[j]] = a[s[j]] + 1;
-            }
+        unordered_map<char, ll> a;
+        ll c;
+        for (ll j = 0; j < n; j++) {
+            char u;
+            cin >> u;
+            a[u]++;
         }
 //        for (auto d:a) {
 //            cout << d.first << " " << d.second << endl;
 //        }
-        for (int i = 0; i < q; i++) {
-            cin >> c[i];
+        ll ans = 0;
+        for (ll i = 0; i < q; i++) {
+            cin >> c;
             for (auto e:a) {
-                e.second = e.second - c[i];
-                if (e.second < 0) {
-                    e.second = 0;
-                }
-                ans += e.second;
+                if (e.second >= c)
+                    ans += e.second - c;
             }
             cout << ans << endl;
             ans = 0;
