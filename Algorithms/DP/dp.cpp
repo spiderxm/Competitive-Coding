@@ -74,9 +74,9 @@ int main() {
     int n;
     cin >> n;
     ll dp[100] = {0};
-
-    cout << fib(n, dp) << endl;
-    cout << fibbo(n) << endl;
+//
+//    cout << fib(n, dp) << endl;
+//    cout << fibbo(n) << endl;
     cout << fibbospace(n) << endl;
 
     return 0;
