@@ -30,7 +30,8 @@ void create(int a[], int n) {
     }
 }
 
-int display(node *first) {
+//displays linked list
+void display(node *first) {
     node *p = first;
     while (p) {
         cout << p->data << " ";
@@ -49,6 +50,7 @@ int sum(node *first) {
     return sum;
 }
 
+// returns max element of linked list
 int max(node *first) {
     int max = INT_MIN;
     node *p = first;
@@ -61,6 +63,7 @@ int max(node *first) {
     return max;
 }
 
+// returns minimum element of linked list
 int min(node *first) {
     int min = INT_MAX;
     node *p = first;
@@ -73,6 +76,34 @@ int min(node *first) {
     return min;
 }
 
+//returns length of linked list
+int length(node *first) {
+    int length = 0;
+    node *p = first;
+    while (p) {
+        p = p->next;
+        length++;
+    }
+    return length;
+}
+
+//recursive display of linked list
+//O(n)
+void recursive_display(node *p) {
+    if (p != NULL) {
+        cout << p->data << " ";
+        recursive_display(p->next);
+    }
+}
+
+void recursive_display2(node *p) {
+    if (p != NULL) {
+        recursive_display2(p->next);
+        cout << p->data << " ";
+    }
+}
+//reverse printing of linked list
+
 int main() {
     int n;
     cin >> n;
@@ -82,5 +113,12 @@ int main() {
     }
     create(a, n);
     display(first);
-    cout << endl << sum(first) << endl << max(first) << endl << min(first);
+    cout << endl << sum(first) << endl;
+    cout << max(first) << endl;
+    cout << min(first) << endl;
+    cout << length(first) << endl;
+    recursive_display(first);
+    cout << endl;
+    recursive_display2(first);
+
 }
