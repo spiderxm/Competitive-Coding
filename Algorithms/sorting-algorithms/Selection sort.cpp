@@ -14,7 +14,7 @@
 #define boost ios::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 #define w() ll t; cin >> t; while(t--)
 using namespace std;
-
+// complexity : O(n^2)
 void selection_sort(ll a[], ll n) {
     ll min;
     for (int i = 0; i < n; ++i) {
