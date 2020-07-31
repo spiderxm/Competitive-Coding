@@ -134,5 +134,12 @@ int main() {
         cout << y << " ";
     }
     cout << endl;
+
+    auto it4 = a.begin();
+    it4 = it4 + 3;
+    cout << *it4;
+
+    cout << *it4;
+
     return 0;
 }
