@@ -14,6 +14,7 @@
 #define boost ios::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 #define w() ll t; cin >> t; while(t--)
 using namespace std;
+
 // complexity : O(n^2)
 void selection_sort(ll a[], ll n) {
     ll min;
@@ -65,7 +66,7 @@ int main() {
 
 // Concept The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
 //
-//1) The subarray which is already sorted.
-//2) Remaining subarray which is unsorted.
+// 1) The subarray which is already sorted.
+// 2) Remaining subarray which is unsorted.
 //
-//In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.
+// In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.
