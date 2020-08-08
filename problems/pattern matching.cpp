@@ -4,7 +4,6 @@
 
 //shuru apni marzi se kiye the ab fhodne ka man kar raha hai
 #include<bits/stdc++.h>
-
 #define ll long long
 #define sq(a) (a)*(a)
 #define endl "\n"
