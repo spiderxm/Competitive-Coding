@@ -4,7 +4,6 @@
 
 //shuru apni marzi se kiye the ab fhodne ka man kar raha hai
 #include<bits/stdc++.h>
-
 #define ll long long
 #define sq(a) (a)*(a)
 #define endl "\n"
@@ -134,7 +133,40 @@ node *input(node *&head) {
     return head;
 }
 
-// swapping is a bad idea for sorting linked list
+void reverse(node *&head) {
+    // reverse a linked list
+    // swapping is not good for reversing a linked list
+    // swapping is an expensive operation
+    // we are just going to change the pointer variable
+    node *curr = head;
+    node *prev = NULL;
+    node *next;
+    while (curr != NULL) {
+        next = curr->next;
+        curr->next = prev;
+        // update previous and curr
+        prev = curr;
+        curr = next;
+    }
+    head = prev;
+}
+
+node *recursively_reverse(node *head) {
+    // smallest linked list
+    if (head->next == NULL or head == NULL) {
+        return head;
+    }
+    node *shead = recursively_reverse(head->next);
+//    node *temp = shead;
+//    while (temp->next != NULL) {
+//        temp = temp->next;
+//    }  // skipping this loop will save time in long run
+    //temp is nothing but head->next and we can use to optimise this
+    node *temp = head->next;
+    head->next = NULL;
+    temp->next = head;
+    return shead;
+}
 
 int main() {
 
@@ -142,18 +174,23 @@ int main() {
     // Linked List
     // Pointers are used in implement Linked List
     // STL implementation is also avaliable for each data structure
-//    insertion_at_head(head, 0);
-//    insertion_at_head(head, 1);
-//    insertion_at_head(head, 2);
-//    insertion_at_head(head, 3);
-//    InsertAtTail(head, 10);
-//    insertion_at_head(head, 4);
-//    insertion_at_head(head, 5);
-//    InsertinMiddle(head, 3, 4);
-//    head = deleteHead(head);
-    head = input(head);
-//    cout << search(head, 3) << endl;
+    insertion_at_head(head, 0);
+    insertion_at_head(head, 1);
+    insertion_at_head(head, 2);
+    insertion_at_head(head, 3);
+    InsertAtTail(head, 10);
+    insertion_at_head(head, 4);
+    insertion_at_head(head, 5);
+    InsertinMiddle(head, 3, 4);
+    head = deleteHead(head);
+    //    head = input(head);
+    cout << search(head, 3) << endl;
     print(head);
     cout << endl;
+    reverse(head);
+    print(head);
+    cout << endl;
+    head = recursively_reverse(head);
+    print(head);
     return 0;
 }
