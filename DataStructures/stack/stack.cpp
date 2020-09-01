@@ -9,11 +9,12 @@
 #define boost ios::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 using namespace std;
 
+template<typename T> // we can pass multiple datatypes here
 class Stack {
 private:
-    vector<int> v;
+    vector<T> v;
 public:
-    void push(int data) {
+    void push(T data) {
         v.push_back(data);
     }
 
@@ -29,16 +30,17 @@ public:
         }
     }
 
-    int top() {
+    T top() {
         return v[v.size() - 1];
     }
 };
+
 //  we can generalise this data for all data types
 int main() {
     boost;
-    Stack s;
-    for (int i = 0; i < 5; ++i) {
-        s.push(i);
+    Stack<char> s;
+    for (int i = 99; i < 104; ++i) {
+        s.push(char(i));
     }
     for (int j = 0; j < 5; ++j) {
         cout << s.top() << endl;
