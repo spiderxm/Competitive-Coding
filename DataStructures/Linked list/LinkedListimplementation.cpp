@@ -158,6 +158,52 @@ int kth_element_from_last(node *head, int k) {
     }
 }
 
+int kth_ele_from_end(node *head, int k) {
+    node *f, *s;
+    f = head;
+    s = head;
+    while (k) {
+        k--;
+        f = f->next;
+    }
+    while (f != NULL) {
+        f = f->next;
+        s = s->next;
+    }
+    return s->data;
+}
+
+int mid(node *head) {
+    int size = size_of_linked_list(head);
+    int t = 0;
+    if (size % 2 == 0) {
+        t = size / 2;
+    } else {
+        t = size / 2 + 1;
+    }
+    t--;
+    while (t) {
+        t--;
+        head = head->next;
+    }
+    return head->data;
+}
+
+int mid_element(node *head) {
+    if(head == NULL or head->next==NULL){
+        return head->data;
+    }
+    node *f, *s;
+    f = head->next;
+    s = head;
+    int count = 0;
+    while (f != NULL && f->next!=NULL) {
+            f = f->next->next;
+            s = s->next;
+    }
+    return s->data;
+}
+
 int main() {
     node *head = NULL;
     for (int i = 0; i < 5; ++i) {
@@ -192,9 +238,14 @@ int main() {
     cout << "Linked list after getting reversed" << endl;
     print_Linked_List(head);
     cout << "Is 20 present or not " << search(head, 20) << endl;
-    delete head;
+    cout << mid_element(head) << endl;
+    cout << mid(head) << endl;
+    deletion_at_head(head);
+    cout << mid_element(head) << endl;
+    cout << mid(head) << endl;
     cout << kth_element_from_last(head, 10) << endl;
     cout << kth_element_from_last(head, 5) << endl;
-
+    cout << kth_ele_from_end(head, 1) << endl;
+    cout << kth_ele_from_end(head, 5) << endl;
     return 0;
 }
