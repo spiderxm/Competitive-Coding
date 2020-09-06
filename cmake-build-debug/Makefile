@@ -123,32 +123,32 @@ cp/fast:
 	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/build
 .PHONY : cp/fast
 
-DataStructures/hashtable/1.o: DataStructures/hashtable/1.cpp.o
+codeforces/permutation_forgery.o: codeforces/permutation_forgery.cpp.o
 
-.PHONY : DataStructures/hashtable/1.o
+.PHONY : codeforces/permutation_forgery.o
 
 # target to build an object file
-DataStructures/hashtable/1.cpp.o:
-	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/DataStructures/hashtable/1.cpp.o
-.PHONY : DataStructures/hashtable/1.cpp.o
+codeforces/permutation_forgery.cpp.o:
+	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.o
+.PHONY : codeforces/permutation_forgery.cpp.o
 
-DataStructures/hashtable/1.i: DataStructures/hashtable/1.cpp.i
+codeforces/permutation_forgery.i: codeforces/permutation_forgery.cpp.i
 
-.PHONY : DataStructures/hashtable/1.i
+.PHONY : codeforces/permutation_forgery.i
 
 # target to preprocess a source file
-DataStructures/hashtable/1.cpp.i:
-	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/DataStructures/hashtable/1.cpp.i
-.PHONY : DataStructures/hashtable/1.cpp.i
+codeforces/permutation_forgery.cpp.i:
+	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.i
+.PHONY : codeforces/permutation_forgery.cpp.i
 
-DataStructures/hashtable/1.s: DataStructures/hashtable/1.cpp.s
+codeforces/permutation_forgery.s: codeforces/permutation_forgery.cpp.s
 
-.PHONY : DataStructures/hashtable/1.s
+.PHONY : codeforces/permutation_forgery.s
 
 # target to generate assembly for a file
-DataStructures/hashtable/1.cpp.s:
-	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/DataStructures/hashtable/1.cpp.s
-.PHONY : DataStructures/hashtable/1.cpp.s
+codeforces/permutation_forgery.cpp.s:
+	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.s
+.PHONY : codeforces/permutation_forgery.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cp"
-	@echo "... DataStructures/hashtable/1.o"
-	@echo "... DataStructures/hashtable/1.i"
-	@echo "... DataStructures/hashtable/1.s"
+	@echo "... codeforces/permutation_forgery.o"
+	@echo "... codeforces/permutation_forgery.i"
+	@echo "... codeforces/permutation_forgery.s"
 .PHONY : help
 
 

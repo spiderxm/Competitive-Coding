@@ -3,4 +3,4 @@ project(cp)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(cp  DataStructures/hashtable/1.cpp)
+add_executable(cp  "codeforces/permutation forgery.cpp")

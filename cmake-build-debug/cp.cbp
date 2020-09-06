@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mrigankanand/CLionProjects/cp/DataStructures/hashtable/1.cpp">
+		<Unit filename="/Users/mrigankanand/CLionProjects/cp/codeforces/permutation forgery.cpp">
 			<Option target="cp"/>
 		</Unit>
 		<Unit filename="/Users/mrigankanand/CLionProjects/cp/CMakeLists.txt">

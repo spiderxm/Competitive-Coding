@@ -189,19 +189,39 @@ int mid(node *head) {
     return head->data;
 }
 
+
 int mid_element(node *head) {
-    if(head == NULL or head->next==NULL){
+    if (head == NULL or head->next == NULL) {
         return head->data;
     }
     node *f, *s;
     f = head->next;
     s = head;
     int count = 0;
-    while (f != NULL && f->next!=NULL) {
-            f = f->next->next;
-            s = s->next;
+    while (f != NULL && f->next != NULL) {
+        f = f->next->next;
+        s = s->next;
     }
     return s->data;
+}
+
+// function to merge two sorted linked list
+node *merge(node *a, node *b) {
+    if (a == NULL) {
+        return b;
+    }
+    if (b == NULL) {
+        return a;
+    }
+    node *c;
+    if (a->data > b->data) {
+        c = b;
+        c->next = merge(a, b->next);
+    } else {
+        c = a;
+        c->next = merge(a->next, b);
+    }
+    return c;
 }
 
 int main() {
@@ -247,5 +267,15 @@ int main() {
     cout << kth_element_from_last(head, 5) << endl;
     cout << kth_ele_from_end(head, 1) << endl;
     cout << kth_ele_from_end(head, 5) << endl;
+    node *a = NULL;
+    node *b = NULL;
+    for (int i = 0; i < 20; ++i) {
+        insertion_at_tail(a, i);
+    }
+    for (int j = 20; j <=40; ++j) {
+        insertion_at_tail(b, j);
+    }
+    node *c = merge(a, b);
+    print_Linked_List(c);
     return 0;
 }
