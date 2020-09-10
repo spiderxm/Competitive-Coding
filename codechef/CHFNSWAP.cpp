@@ -15,6 +15,17 @@
 #define w() ll t; cin >> t; while(t--)
 using namespace std;
 
+int fact(ll n) {
+    if (n == 0) return 1;
+    if (n > 0) return n * fact(n - 1);
+};
+
+int NCR(ll n, ll r) {
+    if (n == r) return 1;
+    if (r == 0 && n != 0) return 1;
+    else return (n * fact(n - 1)) / fact(n - 1) * fact(n - r);
+};
+
 int main() {
     ll t;
     cin >> t;
@@ -23,10 +34,15 @@ int main() {
         cin >> n;
         ll count = 0;
         ll sum = n * (n + 1) / 2;
-        for (int i = 1; i <= n; ++i) {
-            ll sum1 = i * (i + 1) / 2;
-            if (sum1 >= sum / 2) {
-                continue;
+        if (sum % 2) {
+            cout << 0 << endl;
+        } else {
+            ll ss = sum / 2;
+            ll nn = (-1 + sqrt(1 + 8 * ss)) / 2;
+            if (((nn * (nn + 1)) / 2) == ss) {
+                cout << ((nn - 1) * nn) / 2 + ((n - nn - 1) * (n - nn)) / 2 << endl;
+            } else {
+                cout << n - nn << endl;
             }
         }
     }

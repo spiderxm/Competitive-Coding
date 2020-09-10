@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/mrigankanand/CLionProjects/cp/codeforces/permutation forgery.cpp" "/Users/mrigankanand/CLionProjects/cp/cmake-build-debug/CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.o"
+  "/Users/mrigankanand/CLionProjects/cp/DataStructures/BST/BST.cpp" "/Users/mrigankanand/CLionProjects/cp/cmake-build-debug/CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

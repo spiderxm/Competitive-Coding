@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.o"
+  "CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.o"
   "cp"
   "cp.pdb"
 )

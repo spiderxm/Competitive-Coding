@@ -57,27 +57,27 @@ include CMakeFiles/cp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cp.dir/flags.make
 
-CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.o: CMakeFiles/cp.dir/flags.make
-CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.o: ../codeforces/permutation\ forgery.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrigankanand/CLionProjects/cp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.o -c "/Users/mrigankanand/CLionProjects/cp/codeforces/permutation forgery.cpp"
+CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.o: CMakeFiles/cp.dir/flags.make
+CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.o: ../DataStructures/BST/BST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrigankanand/CLionProjects/cp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.o -c /Users/mrigankanand/CLionProjects/cp/DataStructures/BST/BST.cpp
 
-CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/mrigankanand/CLionProjects/cp/codeforces/permutation forgery.cpp" > CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.i
+CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrigankanand/CLionProjects/cp/DataStructures/BST/BST.cpp > CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.i
 
-CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/mrigankanand/CLionProjects/cp/codeforces/permutation forgery.cpp" -o CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.s
+CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrigankanand/CLionProjects/cp/DataStructures/BST/BST.cpp -o CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.s
 
 # Object files for target cp
 cp_OBJECTS = \
-"CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.o"
+"CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.o"
 
 # External object files for target cp
 cp_EXTERNAL_OBJECTS =
 
-cp: CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.o
+cp: CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.o
 cp: CMakeFiles/cp.dir/build.make
 cp: CMakeFiles/cp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mrigankanand/CLionProjects/cp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cp"

@@ -123,32 +123,32 @@ cp/fast:
 	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/build
 .PHONY : cp/fast
 
-codeforces/permutation_forgery.o: codeforces/permutation_forgery.cpp.o
+DataStructures/BST/BST.o: DataStructures/BST/BST.cpp.o
 
-.PHONY : codeforces/permutation_forgery.o
+.PHONY : DataStructures/BST/BST.o
 
 # target to build an object file
-codeforces/permutation_forgery.cpp.o:
-	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.o
-.PHONY : codeforces/permutation_forgery.cpp.o
+DataStructures/BST/BST.cpp.o:
+	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.o
+.PHONY : DataStructures/BST/BST.cpp.o
 
-codeforces/permutation_forgery.i: codeforces/permutation_forgery.cpp.i
+DataStructures/BST/BST.i: DataStructures/BST/BST.cpp.i
 
-.PHONY : codeforces/permutation_forgery.i
+.PHONY : DataStructures/BST/BST.i
 
 # target to preprocess a source file
-codeforces/permutation_forgery.cpp.i:
-	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.i
-.PHONY : codeforces/permutation_forgery.cpp.i
+DataStructures/BST/BST.cpp.i:
+	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.i
+.PHONY : DataStructures/BST/BST.cpp.i
 
-codeforces/permutation_forgery.s: codeforces/permutation_forgery.cpp.s
+DataStructures/BST/BST.s: DataStructures/BST/BST.cpp.s
 
-.PHONY : codeforces/permutation_forgery.s
+.PHONY : DataStructures/BST/BST.s
 
 # target to generate assembly for a file
-codeforces/permutation_forgery.cpp.s:
-	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/codeforces/permutation_forgery.cpp.s
-.PHONY : codeforces/permutation_forgery.cpp.s
+DataStructures/BST/BST.cpp.s:
+	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/DataStructures/BST/BST.cpp.s
+.PHONY : DataStructures/BST/BST.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cp"
-	@echo "... codeforces/permutation_forgery.o"
-	@echo "... codeforces/permutation_forgery.i"
-	@echo "... codeforces/permutation_forgery.s"
+	@echo "... DataStructures/BST/BST.o"
+	@echo "... DataStructures/BST/BST.i"
+	@echo "... DataStructures/BST/BST.s"
 .PHONY : help
 
 

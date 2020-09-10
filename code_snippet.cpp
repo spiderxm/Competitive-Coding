@@ -1,3 +1,7 @@
+//
+// Created by Mrigank Anand on 08/09/20.
+//
+
 //shuru apni marzi se kiye the ab fhodne ka man kar raha hai
 #include<bits/stdc++.h>
 
@@ -12,6 +16,5 @@
 using namespace std;
 
 int main() {
-
     return 0;
 }
